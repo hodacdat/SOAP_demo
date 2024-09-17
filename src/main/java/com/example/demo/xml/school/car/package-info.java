@@ -5,5 +5,5 @@
 // Generated on: 2024.09.17 at 05:56:29 PM ICT 
 //
 
-@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.demo.example.com/xml/school/book", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
-package com.example.demo.xml.school.book;
+@jakarta.xml.bind.annotation.XmlSchema(namespace = "http://www.demo.example.com/xml/school/car", elementFormDefault = jakarta.xml.bind.annotation.XmlNsForm.QUALIFIED)
+package com.example.demo.xml.school.car;

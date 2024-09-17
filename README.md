@@ -54,3 +54,5 @@ ex: http://www.demo.example.com/xml/school with path: src/main/java/com/example/
 4. create endpoint for model with @Endpoint: this is place like service: call repository to interact with data
 5. create configuration with @EnableWs & @Configuration: config soap, url to access, namespace,...
 6. run like (I) above
+7. url is base on soapConfig.java.
+ex: http://localhost:8080/service/carWsdl.wsdl

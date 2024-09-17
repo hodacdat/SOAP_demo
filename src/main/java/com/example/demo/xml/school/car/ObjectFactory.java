@@ -6,7 +6,7 @@
 //
 
 
-package com.example.demo.xml.school.book;
+package com.example.demo.xml.school.car;
 
 import jakarta.xml.bind.annotation.XmlRegistry;
 
@@ -14,7 +14,7 @@ import jakarta.xml.bind.annotation.XmlRegistry;
 /**
  * This object contains factory methods for each 
  * Java content interface and Java element interface 
- * generated in the com.example.demo.xml.school.book package. 
+ * generated in the com.example.demo.xml.school.car package. 
  * <p>An ObjectFactory allows you to programatically 
  * construct new instances of the Java representation 
  * for XML content. The Java representation of XML 
@@ -30,34 +30,34 @@ public class ObjectFactory {
 
 
     /**
-     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.example.demo.xml.school.book
+     * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: com.example.demo.xml.school.car
      * 
      */
     public ObjectFactory() {
     }
 
     /**
-     * Create an instance of {@link GetAllBooksRequest }
+     * Create an instance of {@link GetAllCarsRequest }
      * 
      */
-    public GetAllBooksRequest createGetAllBooksRequest() {
-        return new GetAllBooksRequest();
+    public GetAllCarsRequest createGetAllCarsRequest() {
+        return new GetAllCarsRequest();
     }
 
     /**
-     * Create an instance of {@link GetAllBooksResponse }
+     * Create an instance of {@link GetAllCarsResponse }
      * 
      */
-    public GetAllBooksResponse createGetAllBooksResponse() {
-        return new GetAllBooksResponse();
+    public GetAllCarsResponse createGetAllCarsResponse() {
+        return new GetAllCarsResponse();
     }
 
     /**
-     * Create an instance of {@link Book }
+     * Create an instance of {@link Car }
      * 
      */
-    public Book createBook() {
-        return new Book();
+    public Car createCar() {
+        return new Car();
     }
 
 }
