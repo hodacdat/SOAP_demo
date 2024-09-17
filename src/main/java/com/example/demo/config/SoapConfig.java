@@ -38,4 +38,19 @@ public class SoapConfig extends WsConfigurerAdapter {
     public XsdSchema studentSchema(){
         return new SimpleXsdSchema(new ClassPathResource("student.xsd"));
     }
+
+    @Bean(name = "bookWsdl")
+    public DefaultWsdl11Definition bookWsdl11Definition(XsdSchema bookSchema){
+        DefaultWsdl11Definition defaultWsdl11Definition = new DefaultWsdl11Definition();
+        defaultWsdl11Definition.setPortTypeName("BookPort");
+        defaultWsdl11Definition.setLocationUri("/service/book");
+        defaultWsdl11Definition.setTargetNamespace("http://www.demo.example.com/xml/school/book");
+        defaultWsdl11Definition.setSchema(bookSchema);
+        return defaultWsdl11Definition;
+    }
+
+    @Bean
+    public XsdSchema bookSchema(){
+        return new SimpleXsdSchema(new ClassPathResource("book.xsd"));
+    }
 }

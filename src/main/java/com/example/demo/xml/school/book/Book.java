@@ -6,7 +6,7 @@
 //
 
 
-package com.example.demo.xml.school;
+package com.example.demo.xml.school.book;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
@@ -15,18 +15,18 @@ import jakarta.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java class for Student complex type.
+ * <p>Java class for Book complex type.
  * 
  * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Student"&gt;
+ * &lt;complexType name="Book"&gt;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
- *         &lt;element name="standard" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
- *         &lt;element name="address" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="author" type="{http://www.w3.org/2001/XMLSchema}string"/&gt;
+ *         &lt;element name="publish_year" type="{http://www.w3.org/2001/XMLSchema}int"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -36,18 +36,19 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "Student", propOrder = {
+@XmlType(name = "Book", propOrder = {
     "name",
-    "standard",
-    "address"
+    "author",
+    "publishYear"
 })
-public class Student {
+public class Book {
 
     @XmlElement(required = true)
     protected String name;
-    protected int standard;
     @XmlElement(required = true)
-    protected String address;
+    protected String author;
+    @XmlElement(name = "publish_year")
+    protected int publishYear;
 
     /**
      * Gets the value of the name property.
@@ -74,43 +75,43 @@ public class Student {
     }
 
     /**
-     * Gets the value of the standard property.
-     * 
-     */
-    public int getStandard() {
-        return standard;
-    }
-
-    /**
-     * Sets the value of the standard property.
-     * 
-     */
-    public void setStandard(int value) {
-        this.standard = value;
-    }
-
-    /**
-     * Gets the value of the address property.
+     * Gets the value of the author property.
      * 
      * @return
      *     possible object is
      *     {@link String }
      *     
      */
-    public String getAddress() {
-        return address;
+    public String getAuthor() {
+        return author;
     }
 
     /**
-     * Sets the value of the address property.
+     * Sets the value of the author property.
      * 
      * @param value
      *     allowed object is
      *     {@link String }
      *     
      */
-    public void setAddress(String value) {
-        this.address = value;
+    public void setAuthor(String value) {
+        this.author = value;
+    }
+
+    /**
+     * Gets the value of the publishYear property.
+     * 
+     */
+    public int getPublishYear() {
+        return publishYear;
+    }
+
+    /**
+     * Sets the value of the publishYear property.
+     * 
+     */
+    public void setPublishYear(int value) {
+        this.publishYear = value;
     }
 
 }

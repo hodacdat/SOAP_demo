@@ -46,6 +46,7 @@ and plugin below <build> <plugins></plugins> </build> to approach the contract-f
       </configuration>
     </plugin>
 `
+Note: the <source>src/main/resources/student.xsd</source> is declared the model file, if you add new model. you should update this in plugin tag
 
 3. after create Xsd model file, run mvn compile to generate java class
 note that: the "xmlns:tns" and "targetNamespace" has same url, and same with prj structure: 

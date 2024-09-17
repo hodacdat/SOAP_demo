@@ -6,11 +6,10 @@
 //
 
 
-package com.example.demo.xml.school;
+package com.example.demo.xml.school.book;
 
 import jakarta.xml.bind.annotation.XmlAccessType;
 import jakarta.xml.bind.annotation.XmlAccessorType;
-import jakarta.xml.bind.annotation.XmlElement;
 import jakarta.xml.bind.annotation.XmlRootElement;
 import jakarta.xml.bind.annotation.XmlType;
 
@@ -25,7 +24,6 @@ import jakarta.xml.bind.annotation.XmlType;
  *   &lt;complexContent&gt;
  *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
  *       &lt;sequence&gt;
- *         &lt;element name="Student" type="{http://www.demo.example.com/xml/school}Student"/&gt;
  *       &lt;/sequence&gt;
  *     &lt;/restriction&gt;
  *   &lt;/complexContent&gt;
@@ -35,37 +33,9 @@ import jakarta.xml.bind.annotation.XmlType;
  * 
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlType(name = "", propOrder = {
-    "student"
-})
-@XmlRootElement(name = "UpdateStudentRequest")
-public class UpdateStudentRequest {
+@XmlType(name = "")
+@XmlRootElement(name = "GetAllBooksRequest")
+public class GetAllBooksRequest {
 
-    @XmlElement(name = "Student", required = true)
-    protected Student student;
-
-    /**
-     * Gets the value of the student property.
-     * 
-     * @return
-     *     possible object is
-     *     {@link Student }
-     *     
-     */
-    public Student getStudent() {
-        return student;
-    }
-
-    /**
-     * Sets the value of the student property.
-     * 
-     * @param value
-     *     allowed object is
-     *     {@link Student }
-     *     
-     */
-    public void setStudent(Student value) {
-        this.student = value;
-    }
 
 }
