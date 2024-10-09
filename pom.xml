@@ -87,6 +87,12 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+			<version>3.8.0</version> <!-- Check for the latest version -->
+		</dependency>
+
 	</dependencies>
 
 	<build>

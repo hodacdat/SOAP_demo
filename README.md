@@ -14,7 +14,8 @@ I. Access to root PRJ folder and run
 II. Step to create this project: 
 1. go to spring initialize to create springboot java 17 maven 
 2. add dependency follow POM.xml
-`<dependency>
+```
+<dependency>
    <groupId>org.springframework.boot</groupId>
    <artifactId>spring-boot-starter-web-services</artifactId>
    </dependency>
@@ -22,9 +23,14 @@ II. Step to create this project:
 <dependency>
   <groupId>wsdl4j</groupId>
   <artifactId>wsdl4j</artifactId>
-</dependency>`
+</dependency>
+```
+
+
 and plugin below <build> <plugins></plugins> </build> to approach the contract-first ( create model Xsd and run cmd to generate java class )
-`
+
+
+```
     <plugin>
       <groupId>org.codehaus.mojo</groupId>
       <artifactId>jaxb2-maven-plugin</artifactId>
@@ -45,7 +51,7 @@ and plugin below <build> <plugins></plugins> </build> to approach the contract-f
         <clearOutputDir>false</clearOutputDir>
       </configuration>
     </plugin>
-`
+```
 Note: the <source>src/main/resources/student.xsd</source> is declared the model file, if you add new model. you should update this in plugin tag
 
 3. after create Xsd model file, run mvn compile to generate java class
